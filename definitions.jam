@@ -60,6 +60,7 @@ export deferred INSTALL_MODE_FLAG = "ugo-w,o+rX" ;
 export deferred DEVELOPMENT_LANGUAGE = English ;
 export deferred FRAMEWORK_VERSION = A ;
        deferred REMOVE_CVS_FROM_RESOURCES = YES ;
+       deferred REMOVE_SVN_FROM_RESOURCES = YES ;
        deferred COPY_PHASE_STRIP = NO ;
        deferred CLONE_HEADERS = NO ;
        deferred KEEP_PRIVATE_EXTERNS = YES ;   # this currently affects the master.o file only
