@@ -52,6 +52,7 @@ export deferred INSTALL_MODE_FLAG = "ugo-w,o+rX" ;
        deferred JAVA_FRAMEWORK_RESOURCES_DIRS = Resources ;
        deferred JAVA_FRAMEWORK_JARS = ;
        deferred JAVA_USE_DEPENDENCIES = YES ;
+       deferred JAVA_FORCE_FILE_LIST = NO ;
        deferred JAVA_ZIP_FLAGS = -urg ;
        deferred JAVAC_SOURCE_FILE_ENCODING = MACINTOSH ;
 

@@ -706,7 +706,11 @@ rule Bridget
         BRIDGET_FILE_LIST default = $(FILE_LIST)Bridget ;
         BRIDGET_CFLAGS on $(1) = -arch $(ARCH) $(PER_ARCH_CFLAGS) -fno-common -fpascal-strings $(OPTIMIZATION_CFLAGS) $(WARNING_CFLAGS) ;
         BRIDGET_CFLAGS on $(1) += -pipe ;
+
         # seed search paths with target-wide values
+        if $(CPP_HEADER_SYMLINKS_DIR) {
+            BRIDGET_CFLAGS on $(1) += "-I$(CPP_HEADER_SYMLINKS_DIR)" ;
+        }
         HEADER_SEARCH_PATHS on $(1) = $(HEADER_SEARCH_PATHS) ;
         FRAMEWORK_SEARCH_PATHS on $(1) = $(FRAMEWORK_SEARCH_PATHS) ;
 
